@@ -1,0 +1,195 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.contenedor {
+    width: 100%;
+}
+
+.header {
+    background-color: #333;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+nav {
+    background-color: #222;
+    padding: 15px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Evita desbordamientos */
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.3em;
+    padding: 12px 18px;
+    display: block;
+    background-color: #444;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    min-width: 180px; /* Ajustado para mejor responsividad */
+    text-align: center;
+}
+
+nav ul li a:hover {
+    background-color: #777;
+    transform: scale(1.1);
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 200px;
+    text-align: left;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul li ul li {
+    width: 100%;
+}
+
+nav ul li ul li a {
+    padding: 12px;
+    background-color: #444;
+    border-radius: 0;
+    text-align: center;
+    display: block;
+}
+
+nav ul li ul li a:hover {
+    background-color: #666;
+}
+
+section {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #222;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    text-align: left;
+}
+
+/* Estilo para los títulos dentro de la sección */
+h2, h3, h4 {
+    margin: 15px 0;
+}
+
+/* Personalizar enlaces dentro de los títulos */
+h2 a, h3 a {
+    text-decoration: none;
+    color: rgb(90, 14, 110);
+}
+
+h3 {
+    color: rgb(90, 14, 110);
+}
+
+h3 a:hover {
+    text-decoration: underline;
+    color: rgb(130, 20, 160);
+}
+
+/* Estilo para los párrafos dentro de la sección */
+section p {
+    text-align: justify;
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+/* Estilo para imágenes dentro de section */
+section img {
+    display: block;
+    margin: 15px auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+/* Ajustes para hacer la tabla responsive */
+table {
+    width: 100%; /* Se ajusta al contenedor */
+    max-width: 1200px; /* Evita que se estire demasiado en pantallas grandes */
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: #111;
+    color: white;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #444;
+    word-break: break-word; /* Evita que el texto se desborde */
+}
+
+th {
+    background: #333;
+    color: white;
+    text-transform: uppercase;
+}
+
+tr:nth-child(even) {
+    background: #222;
+}
+
+tr:hover {
+    background: #333;
+    transition: 0.3s;
+}
+
+/* Ajustes para imágenes dentro de la tabla */
+td img {
+    display: block;
+    margin: auto;
+    max-width: 80px; /* Tamaño reducido para evitar que rompa el diseño */
+    height: auto;
+    border-radius: 5px;
+}
+
+
+    th, td {
+        font-size: 14px; /* Reduce el tamaño del texto */
+        padding: 8px;
+    }
